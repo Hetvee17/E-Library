@@ -1,0 +1,7 @@
+D:\Semester6\SOC\Labs\Project\Library_Management\Library_Management\bin\Debug\Library_Management.dll.config
+D:\Semester6\SOC\Labs\Project\Library_Management\Library_Management\bin\Debug\Library_Management.dll
+D:\Semester6\SOC\Labs\Project\Library_Management\Library_Management\bin\Debug\Library_Management.pdb
+D:\Semester6\SOC\Labs\Project\Library_Management\Library_Management\obj\Debug\Library_Management.csproj.AssemblyReference.cache
+D:\Semester6\SOC\Labs\Project\Library_Management\Library_Management\obj\Debug\Library_Management.csproj.CoreCompileInputs.cache
+D:\Semester6\SOC\Labs\Project\Library_Management\Library_Management\obj\Debug\Library_Management.dll
+D:\Semester6\SOC\Labs\Project\Library_Management\Library_Management\obj\Debug\Library_Management.pdb
