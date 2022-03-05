@@ -6,6 +6,9 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Library_Management", "Library_Management\Library_Management.csproj", "{A4E2F192-37AC-4E0C-9202-94BF33FEC734}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudentLibrary", "StudentLibrary\StudentLibrary.csproj", "{19443471-249F-4C35-91DB-E9F431CFD656}"
+	ProjectSection(ProjectDependencies) = postProject
+		{A4E2F192-37AC-4E0C-9202-94BF33FEC734} = {A4E2F192-37AC-4E0C-9202-94BF33FEC734}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
