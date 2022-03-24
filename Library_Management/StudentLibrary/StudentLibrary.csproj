@@ -69,51 +69,40 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="adminlogin.aspx" />
+    <Content Include="admin_member_management.aspx" />
+    <Content Include="admin_publisher_management.aspx" />
     <Content Include="Bootstrap\css\bootstrap.min.css" />
     <Content Include="Bootstrap\js\bootstrap.bundle.min.js" />
     <Content Include="Bootstrap\js\bootstrap.min.js" />
     <Content Include="Bootstrap\js\popper.min.js" />
-    <Content Include="images\123.jpg" />
-    <Content Include="images\a-1.jpg" />
-    <Content Include="images\a-2.jpg" />
-    <Content Include="images\a-3.jpg" />
-    <Content Include="images\Detroit.jpg" />
-    <Content Include="images\g-1.jpg" />
-    <Content Include="images\g-2.jpg" />
-    <Content Include="images\g-3.jpg" />
-    <Content Include="images\g-4.jpg" />
-    <Content Include="images\g-5.jpg" />
-    <Content Include="images\g-6.jpg" />
-    <Content Include="images\g-7.jpg" />
-    <Content Include="images\g-8.jpg" />
-    <Content Include="images\g-9.jpg" />
-    <Content Include="images\home-bg.jpg" />
-    <Content Include="images\home-img.png" />
-    <Content Include="images\home_bg.jpg" />
-    <Content Include="images\loader.gif" />
-    <Content Include="images\order-img.jpg" />
-    <Content Include="images\p-6.jpg" />
-    <Content Include="images\pic2.png" />
-    <Content Include="images\pic3.png" />
-    <Content Include="images\s-1.png" />
-    <Content Include="images\s-2.png" />
-    <Content Include="images\s-3.png" />
-    <Content Include="images\s-4.png" />
-    <Content Include="images\s-5.png" />
-    <Content Include="images\s-6.png" />
-    <Content Include="images\s-img-1.jpg" />
-    <Content Include="images\s-img-2.jpg" />
-    <Content Include="images\s-img-3.jpg" />
-    <Content Include="images\s-img-4.jpg" />
-    <Content Include="images\s-img-5.jpg" />
-    <Content Include="images\s-img-6.jpg" />
-    <Content Include="images\step-1.jpg" />
-    <Content Include="images\step-2.jpg" />
-    <Content Include="images\step-3.jpg" />
-    <Content Include="images\step-4.jpg" />
-    <Content Include="images\we.jpg" />
-    <Content Include="Login.aspx" />
-    <Content Include="Signup.aspx" />
+    <Content Include="books\b1.jpg" />
+    <Content Include="books\b2.jpg" />
+    <Content Include="books\b3.jpg" />
+    <Content Include="books\b4.jpg" />
+    <Content Include="books\b5.jpg" />
+    <Content Include="css\customstylesheet.css" />
+    <Content Include="css\style.css" />
+    <Content Include="homepage.aspx" />
+    <Content Include="imgs\adminuser.png" />
+    <Content Include="imgs\book-online.png" />
+    <Content Include="imgs\books.png" />
+    <Content Include="imgs\books1.png" />
+    <Content Include="imgs\defaulters-list.png" />
+    <Content Include="imgs\digital-data.png" />
+    <Content Include="imgs\digital-inventory.png" />
+    <Content Include="imgs\generaluser.png" />
+    <Content Include="imgs\home-bg.jpg" />
+    <Content Include="imgs\in-homepage-banner.jpg" />
+    <Content Include="imgs\library.png" />
+    <Content Include="imgs\publisher.png" />
+    <Content Include="imgs\search-online.png" />
+    <Content Include="imgs\signup.png" />
+    <Content Include="imgs\writer.png" />
+    <Content Include="userlogin.aspx" />
+    <Content Include="userprofile.aspx" />
+    <Content Include="usersignup.aspx" />
+    <Content Include="WebForm1.aspx" />
     <Content Include="wwwroot\css\jquery.ennui.contentslider.css" />
     <Content Include="wwwroot\css\login.css" />
     <Content Include="wwwroot\css\style.css" />
@@ -179,7 +168,6 @@
     </None>
     <Content Include="Datatables\css\jquery.dataTables.min.css" />
     <Content Include="Datatables\js\jquery.dataTables.min.js" />
-    <Content Include="Default.aspx" />
     <Content Include="fontawesome\css\all.css" />
     <Content Include="fontawesome\css\all.min.css" />
     <Content Include="fontawesome\css\brands.css" />
@@ -1964,25 +1952,6 @@
     <Content Include="fontawesome\svgs\solid\yen-sign.svg" />
     <Content Include="fontawesome\svgs\solid\yin-yang.svg" />
     <Content Include="fontawesome\svgs\solid\z.svg" />
-    <Content Include="books\b1.jpg" />
-    <Content Include="books\b2.jpg" />
-    <Content Include="books\b3.jpg" />
-    <Content Include="books\b4.jpg" />
-    <Content Include="books\b5.jpg" />
-    <Content Include="imgs\adminuser.png" />
-    <Content Include="images\books.png" />
-    <Content Include="imgs\books1.png" />
-    <Content Include="imgs\defaulters-list.png" />
-    <Content Include="imgs\digital-data.png" />
-    <Content Include="imgs\digital-inventory.png" />
-    <Content Include="imgs\generaluser.png" />
-    <Content Include="imgs\home-bg.jpg" />
-    <Content Include="imgs\in-homepage-banner.jpg" />
-    <Content Include="imgs\library.png" />
-    <Content Include="imgs\publisher.png" />
-    <Content Include="imgs\search-online.png" />
-    <Content Include="imgs\sign-up.png" />
-    <Content Include="imgs\writer.png" />
     <Content Include="Web.config" />
     <Content Include="wwwroot\lib\twitter-bootstrap\css\bootstrap-grid.css.map" />
     <Content Include="wwwroot\lib\twitter-bootstrap\css\bootstrap-grid.min.css.map" />
@@ -2093,39 +2062,74 @@
     <Content Include="wwwroot\lib\twitter-bootstrap\scss\_variables.scss" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="adminlogin.aspx.cs">
+      <DependentUpon>adminlogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adminlogin.aspx.designer.cs">
+      <DependentUpon>adminlogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_member_management.aspx.cs">
+      <DependentUpon>admin_member_management.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin_member_management.aspx.designer.cs">
+      <DependentUpon>admin_member_management.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_publisher_management.aspx.cs">
+      <DependentUpon>admin_publisher_management.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin_publisher_management.aspx.designer.cs">
+      <DependentUpon>admin_publisher_management.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Connected Services\ServiceReference1\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
-    <Compile Include="Default.aspx.cs">
-      <DependentUpon>Default.aspx</DependentUpon>
+    <Compile Include="homepage.aspx.cs">
+      <DependentUpon>homepage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Default.aspx.designer.cs">
-      <DependentUpon>Default.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Login.aspx.cs">
-      <DependentUpon>Login.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Login.aspx.designer.cs">
-      <DependentUpon>Login.aspx</DependentUpon>
+    <Compile Include="homepage.aspx.designer.cs">
+      <DependentUpon>homepage.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Signup.aspx.cs">
-      <DependentUpon>Signup.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Signup.aspx.designer.cs">
-      <DependentUpon>Signup.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Site1.Master.cs">
       <DependentUpon>Site1.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Site1.Master.designer.cs">
       <DependentUpon>Site1.Master</DependentUpon>
+    </Compile>
+    <Compile Include="userlogin.aspx.cs">
+      <DependentUpon>userlogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="userlogin.aspx.designer.cs">
+      <DependentUpon>userlogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="userprofile.aspx.cs">
+      <DependentUpon>userprofile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="userprofile.aspx.designer.cs">
+      <DependentUpon>userprofile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="usersignup.aspx.cs">
+      <DependentUpon>usersignup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="usersignup.aspx.designer.cs">
+      <DependentUpon>usersignup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -2202,6 +2206,7 @@
   <ItemGroup>
     <WCFMetadataStorage Include="Connected Services\ServiceReference1\" />
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

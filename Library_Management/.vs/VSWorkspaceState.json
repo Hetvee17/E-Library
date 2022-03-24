@@ -1,6 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\StudentLibrary",
+    "\\StudentLibrary\\Connected Services",
+    "\\StudentLibrary\\wwwroot",
+    "\\StudentLibrary\\wwwroot\\css"
   ],
   "SelectedNode": "\\Library_Management.sln",
   "PreviewInSolutionExplorer": false
