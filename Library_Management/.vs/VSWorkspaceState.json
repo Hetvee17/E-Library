@@ -2,9 +2,7 @@
   "ExpandedNodes": [
     "",
     "\\StudentLibrary",
-    "\\StudentLibrary\\Connected Services",
-    "\\StudentLibrary\\wwwroot",
-    "\\StudentLibrary\\wwwroot\\css"
+    "\\StudentLibrary\\Connected Services"
   ],
   "SelectedNode": "\\Library_Management.sln",
   "PreviewInSolutionExplorer": false

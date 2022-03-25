@@ -70,6 +70,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="adminlogin.aspx" />
+    <Content Include="admin_book_inventory.aspx" />
     <Content Include="admin_book_issuing.aspx" />
     <Content Include="admin_author_management.aspx" />
     <Content Include="admin_member_management.aspx" />
@@ -2070,6 +2071,13 @@
     </Compile>
     <Compile Include="adminlogin.aspx.designer.cs">
       <DependentUpon>adminlogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_book_inventory.aspx.cs">
+      <DependentUpon>admin_book_inventory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin_book_inventory.aspx.designer.cs">
+      <DependentUpon>admin_book_inventory.aspx</DependentUpon>
     </Compile>
     <Compile Include="admin_book_issuing.aspx.cs">
       <DependentUpon>admin_book_issuing.aspx</DependentUpon>
