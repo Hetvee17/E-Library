@@ -4,6 +4,7 @@ using System.Linq;
 using System.Runtime.Serialization;
 using System.ServiceModel;
 using System.Text;
+using static Library_Management.CompositeType;
 
 namespace Library_Management
 {
@@ -16,7 +17,6 @@ namespace Library_Management
 
         [OperationContract]
         CompositeType GetDataUsingDataContract(CompositeType composite);
-
         // TODO: Add your service operations here
     }
 

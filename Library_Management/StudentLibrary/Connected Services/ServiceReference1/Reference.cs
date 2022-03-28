@@ -15,18 +15,54 @@ namespace StudentLibrary.ServiceReference1 {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="CompositeType", Namespace="http://schemas.datacontract.org/2004/07/Library_Management")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="InsertBook", Namespace="http://schemas.datacontract.org/2004/07/BookManagement")]
     [System.SerializableAttribute()]
-    public partial class CompositeType : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+    public partial class InsertBook : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
         [System.NonSerializedAttribute()]
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private bool BoolValueField;
+        private string ActualStockField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string StringValueField;
+        private string AuthorNameField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string BookCostField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string BookDescriptionField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string BookImageField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string BookNameField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string CurrentStockField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string EditionField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string GenreField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string IdField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string LanguageField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string PagesField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string PublishDateField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string PublisherNameField;
         
         [global::System.ComponentModel.BrowsableAttribute(false)]
         public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
@@ -39,27 +75,481 @@ namespace StudentLibrary.ServiceReference1 {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public bool BoolValue {
+        public string ActualStock {
             get {
-                return this.BoolValueField;
+                return this.ActualStockField;
             }
             set {
-                if ((this.BoolValueField.Equals(value) != true)) {
-                    this.BoolValueField = value;
-                    this.RaisePropertyChanged("BoolValue");
+                if ((object.ReferenceEquals(this.ActualStockField, value) != true)) {
+                    this.ActualStockField = value;
+                    this.RaisePropertyChanged("ActualStock");
                 }
             }
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public string StringValue {
+        public string AuthorName {
             get {
-                return this.StringValueField;
+                return this.AuthorNameField;
             }
             set {
-                if ((object.ReferenceEquals(this.StringValueField, value) != true)) {
-                    this.StringValueField = value;
-                    this.RaisePropertyChanged("StringValue");
+                if ((object.ReferenceEquals(this.AuthorNameField, value) != true)) {
+                    this.AuthorNameField = value;
+                    this.RaisePropertyChanged("AuthorName");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string BookCost {
+            get {
+                return this.BookCostField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.BookCostField, value) != true)) {
+                    this.BookCostField = value;
+                    this.RaisePropertyChanged("BookCost");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string BookDescription {
+            get {
+                return this.BookDescriptionField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.BookDescriptionField, value) != true)) {
+                    this.BookDescriptionField = value;
+                    this.RaisePropertyChanged("BookDescription");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string BookImage {
+            get {
+                return this.BookImageField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.BookImageField, value) != true)) {
+                    this.BookImageField = value;
+                    this.RaisePropertyChanged("BookImage");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string BookName {
+            get {
+                return this.BookNameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.BookNameField, value) != true)) {
+                    this.BookNameField = value;
+                    this.RaisePropertyChanged("BookName");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string CurrentStock {
+            get {
+                return this.CurrentStockField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.CurrentStockField, value) != true)) {
+                    this.CurrentStockField = value;
+                    this.RaisePropertyChanged("CurrentStock");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Edition {
+            get {
+                return this.EditionField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.EditionField, value) != true)) {
+                    this.EditionField = value;
+                    this.RaisePropertyChanged("Edition");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Genre {
+            get {
+                return this.GenreField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.GenreField, value) != true)) {
+                    this.GenreField = value;
+                    this.RaisePropertyChanged("Genre");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Id {
+            get {
+                return this.IdField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.IdField, value) != true)) {
+                    this.IdField = value;
+                    this.RaisePropertyChanged("Id");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Language {
+            get {
+                return this.LanguageField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.LanguageField, value) != true)) {
+                    this.LanguageField = value;
+                    this.RaisePropertyChanged("Language");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Pages {
+            get {
+                return this.PagesField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.PagesField, value) != true)) {
+                    this.PagesField = value;
+                    this.RaisePropertyChanged("Pages");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string PublishDate {
+            get {
+                return this.PublishDateField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.PublishDateField, value) != true)) {
+                    this.PublishDateField = value;
+                    this.RaisePropertyChanged("PublishDate");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string PublisherName {
+            get {
+                return this.PublisherNameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.PublisherNameField, value) != true)) {
+                    this.PublisherNameField = value;
+                    this.RaisePropertyChanged("PublisherName");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="gettestdata", Namespace="http://schemas.datacontract.org/2004/07/BookManagement")]
+    [System.SerializableAttribute()]
+    public partial class gettestdata : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.Data.DataTable bookField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.Data.DataTable book {
+            get {
+                return this.bookField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.bookField, value) != true)) {
+                    this.bookField = value;
+                    this.RaisePropertyChanged("book");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="UpdateBook", Namespace="http://schemas.datacontract.org/2004/07/BookManagement")]
+    [System.SerializableAttribute()]
+    public partial class UpdateBook : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string ActualStockField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string AuthorNameField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string BookCostField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string BookDescriptionField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string BookImageField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string BookNameField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string CurrentStockField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string EditionField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string GenreField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string IdField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string LanguageField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string PagesField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string PublishDateField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string PublisherNameField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string ActualStock {
+            get {
+                return this.ActualStockField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ActualStockField, value) != true)) {
+                    this.ActualStockField = value;
+                    this.RaisePropertyChanged("ActualStock");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string AuthorName {
+            get {
+                return this.AuthorNameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.AuthorNameField, value) != true)) {
+                    this.AuthorNameField = value;
+                    this.RaisePropertyChanged("AuthorName");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string BookCost {
+            get {
+                return this.BookCostField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.BookCostField, value) != true)) {
+                    this.BookCostField = value;
+                    this.RaisePropertyChanged("BookCost");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string BookDescription {
+            get {
+                return this.BookDescriptionField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.BookDescriptionField, value) != true)) {
+                    this.BookDescriptionField = value;
+                    this.RaisePropertyChanged("BookDescription");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string BookImage {
+            get {
+                return this.BookImageField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.BookImageField, value) != true)) {
+                    this.BookImageField = value;
+                    this.RaisePropertyChanged("BookImage");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string BookName {
+            get {
+                return this.BookNameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.BookNameField, value) != true)) {
+                    this.BookNameField = value;
+                    this.RaisePropertyChanged("BookName");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string CurrentStock {
+            get {
+                return this.CurrentStockField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.CurrentStockField, value) != true)) {
+                    this.CurrentStockField = value;
+                    this.RaisePropertyChanged("CurrentStock");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Edition {
+            get {
+                return this.EditionField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.EditionField, value) != true)) {
+                    this.EditionField = value;
+                    this.RaisePropertyChanged("Edition");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Genre {
+            get {
+                return this.GenreField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.GenreField, value) != true)) {
+                    this.GenreField = value;
+                    this.RaisePropertyChanged("Genre");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Id {
+            get {
+                return this.IdField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.IdField, value) != true)) {
+                    this.IdField = value;
+                    this.RaisePropertyChanged("Id");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Language {
+            get {
+                return this.LanguageField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.LanguageField, value) != true)) {
+                    this.LanguageField = value;
+                    this.RaisePropertyChanged("Language");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Pages {
+            get {
+                return this.PagesField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.PagesField, value) != true)) {
+                    this.PagesField = value;
+                    this.RaisePropertyChanged("Pages");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string PublishDate {
+            get {
+                return this.PublishDateField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.PublishDateField, value) != true)) {
+                    this.PublishDateField = value;
+                    this.RaisePropertyChanged("PublishDate");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string PublisherName {
+            get {
+                return this.PublisherNameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.PublisherNameField, value) != true)) {
+                    this.PublisherNameField = value;
+                    this.RaisePropertyChanged("PublisherName");
                 }
             }
         }
@@ -78,17 +568,23 @@ namespace StudentLibrary.ServiceReference1 {
     [System.ServiceModel.ServiceContractAttribute(ConfigurationName="ServiceReference1.IService1")]
     public interface IService1 {
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/GetData", ReplyAction="http://tempuri.org/IService1/GetDataResponse")]
-        string GetData(int value);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/Insert", ReplyAction="http://tempuri.org/IService1/InsertResponse")]
+        string Insert(StudentLibrary.ServiceReference1.InsertBook book);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/GetData", ReplyAction="http://tempuri.org/IService1/GetDataResponse")]
-        System.Threading.Tasks.Task<string> GetDataAsync(int value);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/Insert", ReplyAction="http://tempuri.org/IService1/InsertResponse")]
+        System.Threading.Tasks.Task<string> InsertAsync(StudentLibrary.ServiceReference1.InsertBook book);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/GetDataUsingDataContract", ReplyAction="http://tempuri.org/IService1/GetDataUsingDataContractResponse")]
-        StudentLibrary.ServiceReference1.CompositeType GetDataUsingDataContract(StudentLibrary.ServiceReference1.CompositeType composite);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/GetInfo", ReplyAction="http://tempuri.org/IService1/GetInfoResponse")]
+        StudentLibrary.ServiceReference1.gettestdata GetInfo();
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/GetDataUsingDataContract", ReplyAction="http://tempuri.org/IService1/GetDataUsingDataContractResponse")]
-        System.Threading.Tasks.Task<StudentLibrary.ServiceReference1.CompositeType> GetDataUsingDataContractAsync(StudentLibrary.ServiceReference1.CompositeType composite);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/GetInfo", ReplyAction="http://tempuri.org/IService1/GetInfoResponse")]
+        System.Threading.Tasks.Task<StudentLibrary.ServiceReference1.gettestdata> GetInfoAsync();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/Update", ReplyAction="http://tempuri.org/IService1/UpdateResponse")]
+        string Update(StudentLibrary.ServiceReference1.UpdateBook book);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/Update", ReplyAction="http://tempuri.org/IService1/UpdateResponse")]
+        System.Threading.Tasks.Task<string> UpdateAsync(StudentLibrary.ServiceReference1.UpdateBook book);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -118,20 +614,33 @@ namespace StudentLibrary.ServiceReference1 {
                 base(binding, remoteAddress) {
         }
         
-        public string GetData(int value) {
-            return base.Channel.GetData(value);
+        public string Insert(StudentLibrary.ServiceReference1.InsertBook book) {
+            return base.Channel.Insert(book);
         }
         
-        public System.Threading.Tasks.Task<string> GetDataAsync(int value) {
-            return base.Channel.GetDataAsync(value);
+        public System.Threading.Tasks.Task<string> InsertAsync(StudentLibrary.ServiceReference1.InsertBook book) {
+            return base.Channel.InsertAsync(book);
         }
         
-        public StudentLibrary.ServiceReference1.CompositeType GetDataUsingDataContract(StudentLibrary.ServiceReference1.CompositeType composite) {
-            return base.Channel.GetDataUsingDataContract(composite);
+        public StudentLibrary.ServiceReference1.gettestdata GetInfo() {
+            return base.Channel.GetInfo();
         }
         
-        public System.Threading.Tasks.Task<StudentLibrary.ServiceReference1.CompositeType> GetDataUsingDataContractAsync(StudentLibrary.ServiceReference1.CompositeType composite) {
-            return base.Channel.GetDataUsingDataContractAsync(composite);
+        public System.Threading.Tasks.Task<StudentLibrary.ServiceReference1.gettestdata> GetInfoAsync() {
+            return base.Channel.GetInfoAsync();
+        }
+        
+        public string Update(StudentLibrary.ServiceReference1.UpdateBook book) {
+            return base.Channel.Update(book);
+        }
+        
+        public System.Threading.Tasks.Task<string> UpdateAsync(StudentLibrary.ServiceReference1.UpdateBook book) {
+            return base.Channel.UpdateAsync(book);
+        }
+
+        internal string Update(StudentLibrary.UpdateBook book)
+        {
+            throw new NotImplementedException();
         }
     }
 }
