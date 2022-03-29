@@ -26,7 +26,6 @@
     <MetadataFile FileName="service.xsd" MetadataType="Schema" ID="8406c1ca-3b2e-4049-8c9e-74eaf7528dd0" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/BookManagement/Service1/mex" />
     <MetadataFile FileName="service1.xsd" MetadataType="Schema" ID="c5cd84ac-be6b-441f-9d6a-8cb8928f7ade" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/BookManagement/Service1/mex" />
     <MetadataFile FileName="BookManagement.xsd" MetadataType="Schema" ID="9a8d4a38-836d-4bed-84ab-4cc65caae11f" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/BookManagement/Service1/mex" />
-    <MetadataFile FileName="System.Data.xsd" MetadataType="Schema" ID="26e498cc-aeeb-4bb1-a615-11843739b4df" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/BookManagement/Service1/mex" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

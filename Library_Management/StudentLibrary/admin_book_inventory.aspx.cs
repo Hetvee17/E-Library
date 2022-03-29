@@ -1,6 +1,9 @@
 ﻿using StudentLibrary.ServiceReference1;
 using System;
 using System.Collections.Generic;
+using System.Configuration;
+using System.Data;
+using System.Data.SqlClient;
 using System.IO;
 using System.Linq;
 using System.Web;
@@ -21,7 +24,65 @@ namespace StudentLibrary
 
         protected void Button4_Click(object sender, EventArgs e)
         {
+            string strcon = ConfigurationManager.ConnectionStrings["con"].ConnectionString;
+            try
+            {
+                SqlConnection con = new SqlConnection(strcon);
+                if (con.State == ConnectionState.Closed)
+                {
+                    con.Open();
+                }
+                SqlCommand cmd = new SqlCommand("SELECT * from book_master_tbl WHERE book_id='" + TextBox1.Text.Trim() + "';", con);
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+                if (dt.Rows.Count >= 1)
+                {
+                    TextBox2.Text = dt.Rows[0]["book_name"].ToString();
+                    TextBox3.Text = dt.Rows[0]["publish_date"].ToString();
+                    TextBox9.Text = dt.Rows[0]["edition"].ToString();
+                    TextBox10.Text = dt.Rows[0]["book_cost"].ToString().Trim();
+                    TextBox11.Text = dt.Rows[0]["no_of_pages"].ToString().Trim();
+                    TextBox4.Text = dt.Rows[0]["actual_stock"].ToString().Trim();
+                    TextBox5.Text = dt.Rows[0]["current_stock"].ToString().Trim();
+                    TextBox6.Text = dt.Rows[0]["book_description"].ToString();
+                    TextBox12.Text = dt.Rows[0]["publisher_name"].ToString().Trim();
+                    TextBox13.Text = dt.Rows[0]["author_name"].ToString().Trim();
+                    TextBox7.Text = "" + (Convert.ToInt32(dt.Rows[0]["actual_stock"].ToString()) - Convert.ToInt32(dt.Rows[0]["current_stock"].ToString()));
 
+                    DropDownList1.SelectedValue = dt.Rows[0]["language"].ToString().Trim();
+                    
+
+                    ListBox1.ClearSelection();
+                    string[] genre = dt.Rows[0]["genre"].ToString().Trim().Split(',');
+                    for (int i = 0; i < genre.Length; i++)
+                    {
+                        for (int j = 0; j < ListBox1.Items.Count; j++)
+                        {
+                            if (ListBox1.Items[j].ToString() == genre[i])
+                            {
+                                ListBox1.Items[j].Selected = true;
+
+                            }
+                        }
+                    }
+
+                    global_actual_stock = Convert.ToInt32(dt.Rows[0]["actual_stock"].ToString().Trim());
+                    global_current_stock = Convert.ToInt32(dt.Rows[0]["current_stock"].ToString().Trim());
+                    global_issued_books = global_actual_stock - global_current_stock;
+                    global_filepath = dt.Rows[0]["book_img_link"].ToString();
+
+                }
+                else
+                {
+                    Response.Write("<script>alert('Invalid Book ID');</script>");
+                }
+
+            }
+            catch (Exception ex)
+            {
+                Response.Write("<script>alert('" + ex.Message + "');</script>");
+            }
         }
 
         protected void Button1_Click(object sender, EventArgs e)
@@ -53,7 +114,7 @@ namespace StudentLibrary
             book.Pages = TextBox11.Text;
             book.BookDescription = TextBox6.Text;
             book.ActualStock = TextBox4.Text;
-            book.CurrentStock = TextBox5.Text;
+            book.CurrentStock = TextBox4.Text;
             book.BookImage = filepath;
 
             string res = client.Insert(book);
@@ -63,8 +124,11 @@ namespace StudentLibrary
 
         protected void Button3_Click(object sender, EventArgs e)
         {
+            UpdateBook book = new UpdateBook();
+
             int actual_stock = Convert.ToInt32(TextBox4.Text.Trim());
             int current_stock = Convert.ToInt32(TextBox5.Text.Trim());
+            
 
             if (global_actual_stock == actual_stock)
             {
@@ -105,7 +169,7 @@ namespace StudentLibrary
                 FileUpload1.SaveAs(Server.MapPath("book_inventory/" + filename));
                 filepath = "~/book_inventory/" + filename;
             }
-            UpdateBook book = new UpdateBook();
+            
 
             book.Id = TextBox1.Text;
             book.BookName = TextBox2.Text;

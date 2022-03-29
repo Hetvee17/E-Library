@@ -56,9 +56,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="Connected Services\ServiceReference1\BookManagement.ServiceReference1.gettestdata.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
     <None Include="Connected Services\ServiceReference1\BookManagement.xsd">
       <SubType>Designer</SubType>
     </None>
@@ -67,9 +64,6 @@
       <SubType>Designer</SubType>
     </None>
     <None Include="Connected Services\ServiceReference1\service1.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Connected Services\ServiceReference1\System.Data.xsd">
       <SubType>Designer</SubType>
     </None>
   </ItemGroup>

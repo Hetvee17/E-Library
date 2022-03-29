@@ -15,9 +15,8 @@ namespace BookManagement
         [OperationContract]
         string Insert(InsertBook book);
 
-
-        [OperationContract]
-        gettestdata GetInfo();
+        //[OperationContract]
+        //DataSet Getbook(string book_id);
 
         [OperationContract]
         string Update(UpdateBook book);
@@ -144,17 +143,16 @@ namespace BookManagement
         }
     }
 
-    [DataContract]
-    [KnownType(typeof(DataTable))]
-    public class gettestdata
-    {
-        [DataMember]
-        public DataTable booktab
-        {
-            get; 
-            set;
-        }
-    }    
+    //[DataContract]
+    //public class DataSet
+    //{
+    //    [DataMember]
+    //    public DataSet booktab
+    //    {
+    //        get;
+    //        set;
+    //    }
+    //}    
 
     [DataContract]
     public class UpdateBook

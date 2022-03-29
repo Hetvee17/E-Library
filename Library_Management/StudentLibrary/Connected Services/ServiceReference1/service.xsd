@@ -15,22 +15,10 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
-  <xs:element name="GetInfo">
-    <xs:complexType>
-      <xs:sequence />
-    </xs:complexType>
-  </xs:element>
-  <xs:element name="GetInfoResponse">
-    <xs:complexType>
-      <xs:sequence>
-        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/BookManagement" minOccurs="0" name="GetInfoResult" nillable="true" type="q2:gettestdata" />
-      </xs:sequence>
-    </xs:complexType>
-  </xs:element>
   <xs:element name="Update">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/BookManagement" minOccurs="0" name="book" nillable="true" type="q3:UpdateBook" />
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/BookManagement" minOccurs="0" name="book" nillable="true" type="q2:UpdateBook" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>

@@ -11,6 +11,7 @@
 namespace BookManagement.ContractTypes
 {
     using System.Xml.Serialization;
+    using System.Data;
     
     
     /// <remarks/>
@@ -21,6 +22,268 @@ namespace BookManagement.ContractTypes
     [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.datacontract.org/2004/07/BookManagement")]
     [System.Xml.Serialization.XmlRootAttribute(Namespace="http://schemas.datacontract.org/2004/07/BookManagement", IsNullable=true)]
     public partial class InsertBook
+    {
+        
+        private string actualStockField;
+        
+        private string authorNameField;
+        
+        private string bookCostField;
+        
+        private string bookDescriptionField;
+        
+        private string bookImageField;
+        
+        private string bookNameField;
+        
+        private string currentStockField;
+        
+        private string editionField;
+        
+        private string genreField;
+        
+        private string idField;
+        
+        private string languageField;
+        
+        private string pagesField;
+        
+        private string publishDateField;
+        
+        private string publisherNameField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string ActualStock
+        {
+            get
+            {
+                return this.actualStockField;
+            }
+            set
+            {
+                this.actualStockField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string AuthorName
+        {
+            get
+            {
+                return this.authorNameField;
+            }
+            set
+            {
+                this.authorNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string BookCost
+        {
+            get
+            {
+                return this.bookCostField;
+            }
+            set
+            {
+                this.bookCostField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string BookDescription
+        {
+            get
+            {
+                return this.bookDescriptionField;
+            }
+            set
+            {
+                this.bookDescriptionField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string BookImage
+        {
+            get
+            {
+                return this.bookImageField;
+            }
+            set
+            {
+                this.bookImageField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string BookName
+        {
+            get
+            {
+                return this.bookNameField;
+            }
+            set
+            {
+                this.bookNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string CurrentStock
+        {
+            get
+            {
+                return this.currentStockField;
+            }
+            set
+            {
+                this.currentStockField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string Edition
+        {
+            get
+            {
+                return this.editionField;
+            }
+            set
+            {
+                this.editionField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string Genre
+        {
+            get
+            {
+                return this.genreField;
+            }
+            set
+            {
+                this.genreField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string Id
+        {
+            get
+            {
+                return this.idField;
+            }
+            set
+            {
+                this.idField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string Language
+        {
+            get
+            {
+                return this.languageField;
+            }
+            set
+            {
+                this.languageField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string Pages
+        {
+            get
+            {
+                return this.pagesField;
+            }
+            set
+            {
+                this.pagesField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string PublishDate
+        {
+            get
+            {
+                return this.publishDateField;
+            }
+            set
+            {
+                this.publishDateField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string PublisherName
+        {
+            get
+            {
+                return this.publisherNameField;
+            }
+            set
+            {
+                this.publisherNameField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("MSBuild", "17.1.0+ae57d105c6094d8d59fe42f557ad0dcb46ec285e")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.datacontract.org/2004/07/BookManagement")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="http://schemas.datacontract.org/2004/07/BookManagement", IsNullable=true)]
+    public partial class gettestdata
+    {
+        
+        private System.Data.DataTable bookField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public System.Data.DataTable book
+        {
+            get
+            {
+                return this.bookField;
+            }
+            set
+            {
+                this.bookField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("MSBuild", "17.1.0+ae57d105c6094d8d59fe42f557ad0dcb46ec285e")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.datacontract.org/2004/07/BookManagement")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="http://schemas.datacontract.org/2004/07/BookManagement", IsNullable=true)]
+    public partial class UpdateBook
     {
         
         private string actualStockField;
@@ -298,6 +561,98 @@ namespace BookManagement.ContractTypes
             set
             {
                 this.insertResultField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("MSBuild", "17.1.0+ae57d105c6094d8d59fe42f557ad0dcb46ec285e")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://tempuri.org/")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="http://tempuri.org/", IsNullable=false)]
+    public partial class GetInfo
+    {
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("MSBuild", "17.1.0+ae57d105c6094d8d59fe42f557ad0dcb46ec285e")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://tempuri.org/")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="http://tempuri.org/", IsNullable=false)]
+    public partial class GetInfoResponse
+    {
+        
+        private gettestdata getInfoResultField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public gettestdata GetInfoResult
+        {
+            get
+            {
+                return this.getInfoResultField;
+            }
+            set
+            {
+                this.getInfoResultField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("MSBuild", "17.1.0+ae57d105c6094d8d59fe42f557ad0dcb46ec285e")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://tempuri.org/")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="http://tempuri.org/", IsNullable=false)]
+    public partial class Update
+    {
+        
+        private UpdateBook bookField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public UpdateBook book
+        {
+            get
+            {
+                return this.bookField;
+            }
+            set
+            {
+                this.bookField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("MSBuild", "17.1.0+ae57d105c6094d8d59fe42f557ad0dcb46ec285e")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://tempuri.org/")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="http://tempuri.org/", IsNullable=false)]
+    public partial class UpdateResponse
+    {
+        
+        private string updateResultField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string UpdateResult
+        {
+            get
+            {
+                return this.updateResultField;
+            }
+            set
+            {
+                this.updateResultField = value;
             }
         }
     }

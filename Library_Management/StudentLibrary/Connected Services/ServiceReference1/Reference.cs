@@ -268,51 +268,6 @@ namespace StudentLibrary.ServiceReference1 {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="gettestdata", Namespace="http://schemas.datacontract.org/2004/07/BookManagement")]
-    [System.SerializableAttribute()]
-    public partial class gettestdata : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
-        
-        [System.NonSerializedAttribute()]
-        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private System.Data.DataTable bookField;
-        
-        [global::System.ComponentModel.BrowsableAttribute(false)]
-        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
-            get {
-                return this.extensionDataField;
-            }
-            set {
-                this.extensionDataField = value;
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public System.Data.DataTable book {
-            get {
-                return this.bookField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.bookField, value) != true)) {
-                    this.bookField = value;
-                    this.RaisePropertyChanged("book");
-                }
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="UpdateBook", Namespace="http://schemas.datacontract.org/2004/07/BookManagement")]
     [System.SerializableAttribute()]
     public partial class UpdateBook : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
@@ -574,12 +529,6 @@ namespace StudentLibrary.ServiceReference1 {
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/Insert", ReplyAction="http://tempuri.org/IService1/InsertResponse")]
         System.Threading.Tasks.Task<string> InsertAsync(StudentLibrary.ServiceReference1.InsertBook book);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/GetInfo", ReplyAction="http://tempuri.org/IService1/GetInfoResponse")]
-        StudentLibrary.ServiceReference1.gettestdata GetInfo();
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/GetInfo", ReplyAction="http://tempuri.org/IService1/GetInfoResponse")]
-        System.Threading.Tasks.Task<StudentLibrary.ServiceReference1.gettestdata> GetInfoAsync();
-        
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/Update", ReplyAction="http://tempuri.org/IService1/UpdateResponse")]
         string Update(StudentLibrary.ServiceReference1.UpdateBook book);
         
@@ -622,25 +571,12 @@ namespace StudentLibrary.ServiceReference1 {
             return base.Channel.InsertAsync(book);
         }
         
-        public StudentLibrary.ServiceReference1.gettestdata GetInfo() {
-            return base.Channel.GetInfo();
-        }
-        
-        public System.Threading.Tasks.Task<StudentLibrary.ServiceReference1.gettestdata> GetInfoAsync() {
-            return base.Channel.GetInfoAsync();
-        }
-        
         public string Update(StudentLibrary.ServiceReference1.UpdateBook book) {
             return base.Channel.Update(book);
         }
         
         public System.Threading.Tasks.Task<string> UpdateAsync(StudentLibrary.ServiceReference1.UpdateBook book) {
             return base.Channel.UpdateAsync(book);
-        }
-
-        internal string Update(StudentLibrary.UpdateBook book)
-        {
-            throw new NotImplementedException();
         }
     }
 }

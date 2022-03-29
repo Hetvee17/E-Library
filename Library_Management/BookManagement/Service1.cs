@@ -57,21 +57,7 @@ namespace BookManagement
             return msg;
         }
 
-        public gettestdata GetInfo()
-        {
-            gettestdata g = new gettestdata();
-            SqlConnection con = new SqlConnection(ConnectionString);
-            if (con.State == ConnectionState.Closed)
-            {
-                con.Open();
-            }
-            SqlCommand cmd = new SqlCommand("Select * from book_master_tbl where book_id = @book_id");
-            SqlDataAdapter da = new SqlDataAdapter(cmd);
-            DataTable dt = new DataTable();
-            da.Fill(dt);
-            g.booktab = dt;
-            return g;
-        }
+        
         public string Update(UpdateBook book)
         {
             string msg;
@@ -99,7 +85,7 @@ namespace BookManagement
                 cmd.Parameters.AddWithValue("@book_img_link", book.BookImage);
                 cmd.ExecuteNonQuery();
                 con.Close();
-                msg = ("<script>alert('Book updated Successfully');</script>");
+                msg = "<script>alert('Book updated Successfully');</script>";
             }
             catch (Exception ex)
             {
@@ -107,5 +93,21 @@ namespace BookManagement
             }
             return msg;
         }
+        
+
+        //public DataSet Getbook(string book_id)
+        //{
+        //    SqlConnection con = new SqlConnection(ConnectionString);
+        //    DataSet ds = new DataSet();
+        //    string cmd = "Select * from book_master_tbl where Id = ";
+        //    StringBuilder builder = new StringBuilder(cmd);
+        //    builder.Append(book_id);
+        //    con.Open();
+        //    cmd = builder.ToString();
+        //    SqlDataAdapter da = new SqlDataAdapter(cmd, con);
+        //    da.Fill(ds);
+        //    return ds;
+
+        //}
     }
 }

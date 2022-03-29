@@ -11,7 +11,6 @@
 namespace BookManagement.ContractTypes
 {
     using System.Xml.Serialization;
-    using System.Data;
     
     
     /// <remarks/>
@@ -245,33 +244,6 @@ namespace BookManagement.ContractTypes
             set
             {
                 this.publisherNameField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("MSBuild", "16.11.2+f3225964253d565862806752e54a7608191a9035")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.datacontract.org/2004/07/BookManagement")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="http://schemas.datacontract.org/2004/07/BookManagement", IsNullable=true)]
-    public partial class gettestdata
-    {
-        
-        private System.Data.DataTable bookField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public System.Data.DataTable book
-        {
-            get
-            {
-                return this.bookField;
-            }
-            set
-            {
-                this.bookField = value;
             }
         }
     }
@@ -561,44 +533,6 @@ namespace BookManagement.ContractTypes
             set
             {
                 this.insertResultField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("MSBuild", "16.11.2+f3225964253d565862806752e54a7608191a9035")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://tempuri.org/")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="http://tempuri.org/", IsNullable=false)]
-    public partial class GetInfo
-    {
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("MSBuild", "16.11.2+f3225964253d565862806752e54a7608191a9035")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://tempuri.org/")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="http://tempuri.org/", IsNullable=false)]
-    public partial class GetInfoResponse
-    {
-        
-        private gettestdata getInfoResultField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public gettestdata GetInfoResult
-        {
-            get
-            {
-                return this.getInfoResultField;
-            }
-            set
-            {
-                this.getInfoResultField = value;
             }
         }
     }
