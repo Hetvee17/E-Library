@@ -21,6 +21,9 @@ namespace BookManagement
         [OperationContract]
         string Update(UpdateBook book);
 
+        [OperationContract]
+        string Delete(DeleteBook book);
+
         // TODO: Add your service operations here
     }
 
@@ -267,6 +270,18 @@ namespace BookManagement
         {
             get { return book_img_link; }
             set { book_img_link = value; }
+        }
+    }
+
+    [DataContract]
+    public class DeleteBook
+    {
+        string book_id;
+        [DataMember]
+        public string Id
+        {
+            get { return book_id; }
+            set { book_id = value; }
         }
     }
 }

@@ -85,6 +85,16 @@ namespace StudentLibrary
             }
         }
 
+        protected void Button2_Click(object sender, EventArgs e)
+        {
+            DeleteBook book = new DeleteBook();
+            book.Id = TextBox1.Text;
+            string res = client.Delete(book);
+            Response.Write("<script>alert('Book Deleted Successfully');</script>");
+            GridView1.DataBind();
+
+        }
+
         protected void Button1_Click(object sender, EventArgs e)
         {
             string genres = "";

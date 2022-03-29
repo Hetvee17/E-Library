@@ -167,7 +167,7 @@
                         <asp:Button ID="Button3" class="btn btn-lg btn-block btn-warning" runat="server" Text="Update" OnClick="Button3_Click" />
                      </div>
                      <div class="col-4">
-                        <asp:Button ID="Button2" class="btn btn-lg btn-block btn-danger" runat="server" Text="Delete" />
+                        <asp:Button ID="Button2" class="btn btn-lg btn-block btn-danger" runat="server" Text="Delete" OnClick="Button2_Click" OnClientClick="return confirm('Are you Sure you want to Delete...?');" />
                      </div>
                   </div>
                </div>

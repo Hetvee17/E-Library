@@ -38,4 +38,10 @@
     </xs:sequence>
   </xs:complexType>
   <xs:element name="UpdateBook" nillable="true" type="tns:UpdateBook" />
+  <xs:complexType name="DeleteBook">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Id" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DeleteBook" nillable="true" type="tns:DeleteBook" />
 </xs:schema>

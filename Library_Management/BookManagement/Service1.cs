@@ -13,7 +13,7 @@ namespace BookManagement
     public class Service1 : IService1
     {
         private const string ConnectionString = @"Data Source=LAPTOP-VL1LT548\SQLEXPRESS;Initial Catalog=elibraryDB;Integrated Security=true";
-
+        
         public string GetData(int value)
         {
             return string.Format("You entered: {0}", value);
@@ -93,7 +93,30 @@ namespace BookManagement
             }
             return msg;
         }
-        
+
+        public string Delete(DeleteBook book)
+        {
+            string msg = "";
+            try
+            {
+                SqlConnection con = new SqlConnection(ConnectionString);
+                if (con.State == ConnectionState.Closed)
+                {
+                    con.Open();
+                }
+                SqlCommand cmd = new SqlCommand("DELETE from book_master_tbl WHERE book_id=@book_id", con);
+                cmd.Parameters.AddWithValue("@book_id", book.Id);
+                cmd.ExecuteNonQuery();
+                con.Close();
+                msg = ("<script>alert('Book Deleted Successfully');</script>");
+            }
+            catch (Exception ex)
+            {
+                msg = ("<script>alert('" + ex.Message + "');</script>");
+            }
+            return msg;
+        }
+
 
         //public DataSet Getbook(string book_id)
         //{
@@ -109,5 +132,7 @@ namespace BookManagement
         //    return ds;
 
         //}
+
+
     }
 }
