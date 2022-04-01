@@ -6,3 +6,11 @@ D:\Semester6\SOC\Labs\Project\E-Library\Library_Management\BookManagement\obj\De
 D:\Semester6\SOC\Labs\Project\E-Library\Library_Management\BookManagement\obj\Debug\BookManagement.dll
 D:\Semester6\SOC\Labs\Project\E-Library\Library_Management\BookManagement\obj\Debug\BookManagement.pdb
 D:\Semester6\SOC\Labs\Project\E-Library\Library_Management\BookManagement\obj\Debug\XsdGeneratedCode\GeneratedXsdTypes.cs
+D:\Semester6\SOC\E-Library\Library_Management\BookManagement\bin\Debug\BookManagement.dll.config
+D:\Semester6\SOC\E-Library\Library_Management\BookManagement\bin\Debug\BookManagement.dll
+D:\Semester6\SOC\E-Library\Library_Management\BookManagement\bin\Debug\BookManagement.pdb
+D:\Semester6\SOC\E-Library\Library_Management\BookManagement\obj\Debug\BookManagement.csproj.AssemblyReference.cache
+D:\Semester6\SOC\E-Library\Library_Management\BookManagement\obj\Debug\BookManagement.csproj.CoreCompileInputs.cache
+D:\Semester6\SOC\E-Library\Library_Management\BookManagement\obj\Debug\XsdGeneratedCode\GeneratedXsdTypes.cs
+D:\Semester6\SOC\E-Library\Library_Management\BookManagement\obj\Debug\BookManagement.dll
+D:\Semester6\SOC\E-Library\Library_Management\BookManagement\obj\Debug\BookManagement.pdb

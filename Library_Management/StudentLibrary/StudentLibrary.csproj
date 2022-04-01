@@ -114,6 +114,7 @@
     <Content Include="userlogin.aspx" />
     <Content Include="userprofile.aspx" />
     <Content Include="usersignup.aspx" />
+    <Content Include="viewBook.aspx" />
     <Content Include="WebForm1.aspx" />
     <Content Include="wwwroot\css\jquery.ennui.contentslider.css" />
     <Content Include="wwwroot\css\login.css" />
@@ -2136,6 +2137,13 @@
     </Compile>
     <Compile Include="usersignup.aspx.designer.cs">
       <DependentUpon>usersignup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="viewBook.aspx.cs">
+      <DependentUpon>viewBook.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="viewBook.aspx.designer.cs">
+      <DependentUpon>viewBook.aspx</DependentUpon>
     </Compile>
     <Compile Include="WebForm1.aspx.cs">
       <DependentUpon>WebForm1.aspx</DependentUpon>

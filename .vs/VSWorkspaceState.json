@@ -2,9 +2,10 @@
   "ExpandedNodes": [
     "",
     "\\Library_Management",
+    "\\Library_Management\\BookManagement",
     "\\Library_Management\\Library_Management",
     "\\Library_Management\\StudentLibrary"
   ],
-  "SelectedNode": "\\Library_Management\\StudentLibrary\\Web.config",
+  "SelectedNode": "\\Library_Management\\BookManagement\\Service1.cs",
   "PreviewInSolutionExplorer": false
 }
