@@ -3,7 +3,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="container shadow p-3 mb-5 bg-body rounded">
-      <div class="row">
+      <div class="row" style="background-image:url('https://media.istockphoto.com/photos/abstract-background-picture-id1145178576?k=20&m=1145178576&s=612x612&w=0&h=DeOI8DQFyTr13lAl58sCHN2-rmEilVc_vUa4vppR3UU='); background-repeat: no-repeat; background-size: 1500px 1000px;">
          <div class="col-md-12">
             <div class="card-column">
                <div class="card-body">

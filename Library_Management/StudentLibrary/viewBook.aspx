@@ -4,15 +4,11 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="container">
             <div class="row">
-
                 <div class="col-sm-12">
-                    <center>
-                        <h3>
-                        Book Inventory List</h3>
-                    </center>
+                   
                     <div class="row">
                         <div class="card">
-               <div class="card-body">
+               <div class="card-body" style="background-image:url('https://media.istockphoto.com/photos/abstract-background-picture-id1145178576?k=20&m=1145178576&s=612x612&w=0&h=DeOI8DQFyTr13lAl58sCHN2-rmEilVc_vUa4vppR3UU='); background-repeat: no-repeat; background-size: 1600px 1500px;">
                   <div class="row">
                      <div class="col">
                         <center>
@@ -102,7 +98,7 @@
                     </div>
                 </div>
                 <center>
-                    <a href="home.aspx">Back to Home</a><span class="clearfix"></span>
+                    <a href="homepage.aspx">Back to Home</a><span class="clearfix"></span>
                     <br />
                 <center>
             </div>

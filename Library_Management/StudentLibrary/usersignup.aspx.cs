@@ -84,6 +84,7 @@ namespace StudentLibrary
                 cmd.ExecuteNonQuery();
                 con.Close();
                 Response.Write("<script>alert('Sign Up Successful. Go to User Login to Login');</script>");
+                Response.Redirect("homepage.aspx");
             }
             catch (Exception ex)
             {

@@ -111,6 +111,7 @@
     <Content Include="imgs\search-online.png" />
     <Content Include="imgs\signup.png" />
     <Content Include="imgs\writer.png" />
+    <Content Include="style.css" />
     <Content Include="userlogin.aspx" />
     <Content Include="userprofile.aspx" />
     <Content Include="usersignup.aspx" />

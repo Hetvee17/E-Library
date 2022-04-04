@@ -1,12 +1,34 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="admin_book_inventory.aspx.cs" Inherits="StudentLibrary.admin_book_inventory" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <script type="text/javascript">        
+        $(document).ready(function () {
+            $(".table").prepend($("<thead></thead>").append($(this).find("tr:first")))
+                .DataTable({
+                    paging: true,
+                    info: false,
+                    fixedHeader: {
+                        header: true,
+                        footer: true
+                    }
+                });
+        });
+        function readURL(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+                reader.onload = function (e) {
+                    $('#imgview').attr('src', e.target.result);
+                };
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+    </script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="container-fluid">
       <div class="row">
          <div class="col-md-5">
             <div class="card">
-               <div class="card-body">
+               <div class="card-body" style="background-image:url('https://media.istockphoto.com/photos/abstract-background-picture-id1145178576?k=20&m=1145178576&s=612x612&w=0&h=DeOI8DQFyTr13lAl58sCHN2-rmEilVc_vUa4vppR3UU='); background-repeat: no-repeat; background-size: 1000px 1000px;">
                   <div class="row">
                      <div class="col">
                         <center>
@@ -35,9 +57,13 @@
                      <div class="col-md-3">
                         <label>Book ID</label>
                         <div class="form-group">
-                           <div class="input-group">
-                              <asp:TextBox CssClass="form-control" ID="TextBox1" runat="server" placeholder="Book ID"></asp:TextBox>
-                              <asp:Button class="form-control btn btn-primary" ID="Button4" runat="server" Text="Go" OnClick="Button4_Click" />
+                           <div class="row">
+                               <div class="col-md-9">
+                                   <asp:TextBox CssClass="form-control" ID="TextBox1" runat="server" placeholder="Book ID"></asp:TextBox>
+                               </div>
+                              <div class="col-md-3">
+                                  <asp:Button class="form-control btn btn-primary" ID="Button4" runat="server" Text="Go" OnClick="Button4_Click" />
+                              </div>                              
                            </div>
                         </div>
                      </div>
@@ -177,7 +203,7 @@
          </div>
          <div class="col-md-7">
             <div class="card">
-               <div class="card-body">
+               <div class="card-body" style="background-image:url('https://media.istockphoto.com/photos/abstract-background-picture-id1145178576?k=20&m=1145178576&s=612x612&w=0&h=DeOI8DQFyTr13lAl58sCHN2-rmEilVc_vUa4vppR3UU='); background-repeat: no-repeat; background-size: 1000px 1000px;">
                   <div class="row">
                      <div class="col">
                         <center>
@@ -194,7 +220,7 @@
                      <div class="col">
                         <asp:GridView class="table table-striped table-bordered" ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="book_id" DataSourceID="SqlDataSource1">
                             <Columns>
-                                <asp:BoundField DataField="book_id" HeaderText="book_id" ReadOnly="True" SortExpression="book_id" />
+                                <asp:BoundField DataField="book_id" HeaderText="ID" ReadOnly="True" SortExpression="book_id" />
                                 
                                 <asp:TemplateField>
                                     <ItemTemplate>

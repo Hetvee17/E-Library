@@ -17,7 +17,7 @@ namespace StudentLibrary
         {
             try
             {
-                if (Session["username"].ToString() == "" || Session["username"] == null)
+                if (Session["username"] == null)
                 {
                     Response.Write("<script>alert('Session Expired Login Again');</script>");
                     Response.Redirect("userlogin.aspx");

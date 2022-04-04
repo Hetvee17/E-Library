@@ -6,7 +6,7 @@
       <div class="row">
          <div class="col-md-5">
             <div class="card">
-               <div class="card-body">
+               <div class="card-body" style="background-image:url('https://media.istockphoto.com/photos/abstract-background-picture-id1145178576?k=20&m=1145178576&s=612x612&w=0&h=DeOI8DQFyTr13lAl58sCHN2-rmEilVc_vUa4vppR3UU='); background-repeat: no-repeat; background-size: 1000px 1000px;">
                   <div class="row">
                      <div class="col">
                         <center>
@@ -36,9 +36,13 @@
                      <div class="col-md-6">
                         <label>Book ID</label>
                         <div class="form-group">
-                           <div class="input-group">
-                              <asp:TextBox CssClass="form-control" ID="TextBox1" runat="server" placeholder="Book ID"></asp:TextBox>
-                              <asp:Button class="btn btn-primary" ID="Button1" runat="server" Text="Go" OnClick="Button1_Click" />
+                           <div class="row">
+                               <div class="col-md-9">
+                                   <asp:TextBox CssClass="form-control" ID="TextBox1" runat="server" placeholder="Book ID"></asp:TextBox>
+                               </div>
+                              <div class="col-md-2">
+                                  <asp:Button class="btn btn-primary" ID="Button1" runat="server" Text="Go" OnClick="Button1_Click" />
+                              </div>                              
                            </div>
                         </div>
                      </div>
@@ -87,7 +91,7 @@
          </div>
          <div class="col-md-7">
             <div class="card">
-               <div class="card-body">
+               <div class="card-body" style="background-image:url('https://media.istockphoto.com/photos/abstract-background-picture-id1145178576?k=20&m=1145178576&s=612x612&w=0&h=DeOI8DQFyTr13lAl58sCHN2-rmEilVc_vUa4vppR3UU='); background-repeat: no-repeat; background-size: 1000px 1000px;">
                   <div class="row">
                      <div class="col">
                         <center>

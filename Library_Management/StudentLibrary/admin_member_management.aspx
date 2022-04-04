@@ -1,12 +1,25 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="admin_member_management.aspx.cs" Inherits="StudentLibrary.admin_member_management1" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".table").prepend($("<thead></thead>").append($(this).find("tr:first")))
+                .DataTable({
+                    paging: true,
+                    info: false,
+                    fixedHeader: {
+                        header: true,
+                        footer: true
+                    }
+                });
+        });
+    </script>    
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <div class="container-fluid">
+    <div class="container-fluid" >
       <div class="row">
          <div class="col-md-5">
             <div class="card">
-               <div class="card-body">
+               <div class="card-body" style="background-image:url('https://media.istockphoto.com/photos/abstract-background-picture-id1145178576?k=20&m=1145178576&s=612x612&w=0&h=DeOI8DQFyTr13lAl58sCHN2-rmEilVc_vUa4vppR3UU='); background-repeat: no-repeat; background-size: 1000px 1000px;">
                   <div class="row">
                      <div class="col">
                         <center>
@@ -30,9 +43,13 @@
                      <div class="col-md-3">
                         <label>Member ID</label>
                         <div class="form-group">
-                           <div class="input-group">
-                              <asp:TextBox CssClass="form-control" ID="TextBox1" runat="server" placeholder="Member ID"></asp:TextBox>
-                              <asp:LinkButton class="btn btn-primary" ID="LinkButton4" runat="server" OnClick="LinkButton4_Click"><i class="fas fa-check-circle"></i></asp:LinkButton>
+                           <div class="row">
+                               <div class="col-md-8">
+                                    <asp:TextBox CssClass="form-control" ID="TextBox1" runat="server" placeholder="Member ID"></asp:TextBox>                                    
+                               </div>
+                              <div class="col-md-4">
+                                  <asp:LinkButton class="btn btn-primary" ID="LinkButton4" runat="server" OnClick="LinkButton4_Click"><i class="fas fa-check-circle"></i></asp:LinkButton>
+                              </div>                              
                            </div>
                         </div>
                      </div>
@@ -45,11 +62,16 @@
                      <div class="col-md-5">
                         <label>Account Status</label>
                         <div class="form-group">
-                           <div class="input-group">
-                              <asp:TextBox CssClass="form-control mr-1" ID="TextBox7" runat="server" placeholder="Account Status" ReadOnly="True"></asp:TextBox>
-                              <asp:LinkButton class="btn btn-success mr-1" ID="LinkButton1" runat="server" OnClick="LinkButton1_Click"><i class="fas fa-check-circle"></i></asp:LinkButton>
+                           <div class="row">
+                               <div class="col-md-4">
+                                   <asp:TextBox CssClass="form-control mr-1" ID="TextBox7" runat="server" placeholder="Account Status" ReadOnly="True"></asp:TextBox>
+                               </div>
+                              <div class="col-md-8">
+                                  <asp:LinkButton class="btn btn-success mr-1" ID="LinkButton1" runat="server" OnClick="LinkButton1_Click"><i class="fas fa-check-circle"></i></asp:LinkButton>
                               <asp:LinkButton class="btn btn-warning mr-1" ID="LinkButton2" runat="server" OnClick="LinkButton2_Click"><i class="far fa-pause-circle"></i></asp:LinkButton>
                               <asp:LinkButton class="btn btn-danger mr-1" ID="LinkButton3" runat="server" OnClick="LinkButton3_Click"><i class="fas fa-times-circle"></i></asp:LinkButton>
+                              </div>
+                              
                            </div>
                         </div>
                      </div>
@@ -115,7 +137,7 @@
          </div>
          <div class="col-md-7">
             <div class="card">
-               <div class="card-body">
+               <div class="card-body" style="background-image:url('https://media.istockphoto.com/photos/abstract-background-picture-id1145178576?k=20&m=1145178576&s=612x612&w=0&h=DeOI8DQFyTr13lAl58sCHN2-rmEilVc_vUa4vppR3UU='); background-repeat: no-repeat; background-size: 1000px 1000px;">
                   <div class="row">
                      <div class="col">
                         <center>
